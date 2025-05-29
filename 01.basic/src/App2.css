@@ -1,0 +1,22 @@
+.App2Css {
+    border: 1px solid black;
+    width: 420px;
+    height: 410px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(https://lh4.googleusercontent.com/proxy/PNEK-D8c6qSOB3itxqXG13ZUdmBkX6HJlM5WH1noAwpCmEyB_NbFZtGbUdk2KTelFhabUWfyK1lObgDreHrbVBC3hRdwYXjL_QxzkNTDKIol2dVuUppoJRB8flSzY30Qg0d2deW0OeMjlAGw9zGqRZvjNubIx9BnacH4E7Bg9P41hNktNmvhepB2AH6W7DuLrmA6E7_a0uCfcjB58qlK23z8chJ_);
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px green;
+    font-weight: bold;
+    animation: rotate-axis 10s linear infinite;
+}
+
+@keyframes rotate-axis {
+    from {
+        transform: rotateZ(350deg) perspective(800px) rotateY(0deg);
+    }
+    to {
+        transform: rotateZ(350deg) perspective(800px) rotateY(360deg);
+    }
+}

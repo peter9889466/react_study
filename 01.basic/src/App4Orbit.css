@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 50%;
+    padding-top: 20rem;
+}
+
+.notions {
+    animation: rotate-axis 10s linear infinite;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@keyframes rotate-axis {
+    from {
+        transform: perspective(800px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+
+.notion {
+    position: absolute;
+    width: 100px;
+    transform: rotateY(calc(var(--i) * 1deg)) translateZ(500px);
+}
