@@ -3,11 +3,13 @@ body {
     width: 30%;
     height: 50%;
     padding-top: 20rem;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
 .notions {
     margin-left: 50px;
-    animation: rotate-axis 15s linear infinite;
+    animation: rotate-axis 10s linear infinite;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -16,9 +18,8 @@ body {
 
 @keyframes rotate-axis {
     from {
-        transform: perspective(800px) rotateY(0deg);
+        transform: perspective(800px) rotateY(0deg) ;
     }
-
     to {
         transform: perspective(800px) rotateY(360deg);
     }

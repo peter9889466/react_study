@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
-
+import './Counter.css';
 export default function Counter() {
     let countLet = 0;
 
-    const increments = () => count++;
-    const decrements = () => count--;
+//    const increments = () => count++;
+//    const decrements = () => count--;
 
-    const [num1, num2] = [1, 2];
+//    const [num1, num2] = [1, 2];
+
 
     const [count, setCount] = useState(0);
     const increment = () => setCount(count + 1);
