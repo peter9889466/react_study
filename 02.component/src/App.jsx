@@ -12,6 +12,9 @@ import Menubox from './components/Menubox'
 2. props(프로퍼티)
 - 리액트는 상위에서 하위로 데이터를 전달하는 방식(단방향)
 - 값을 전달하는 방식은 객체({key: value})로 전달
+ex) <Menubox menuName={"아메리카노"} price={2500}/>
+-> {menuName: "아메리카노", price: 2500} 형태로 생성한 후 하위 컴포넌트로 전달
+- 상위 컴포넌트로부터 전달받은 값을 담고있는 객체
 */
 function App() {
 
@@ -29,9 +32,9 @@ function App() {
         <h1>바닐라라떼</h1>
         <p>4000</p>
       </div> */}
-      <Menubox menuName={"아메리카노"} price={2500}/>
-      <Menubox menuName={"카페라떼"} price={2500}/>
-      <Menubox menuName={"바닐라라떼"} price={4000}/>
+      {/* <Menubox menuName={"아메리카노"} price={2500}/> */}
+      {/* <Menubox menuName={"카페라떼"} price={2500}/> */}
+      {/* <Menubox menuName={"바닐라라떼"} price={4000}/> */}
 
     </>
   )
