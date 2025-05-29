@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     padding: 0;
     width: 30%;
     height: 50%;
@@ -7,7 +6,8 @@ body {
 }
 
 .notions {
-    animation: rotate-axis 10s linear infinite;
+    margin-left: 50px;
+    animation: rotate-axis 15s linear infinite;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;

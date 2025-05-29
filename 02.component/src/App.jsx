@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Menubox from './components/Menubox'
+import MemberInfo from './components/MemberInfo'
 
 /*
 1.Component(컴포넌트)
@@ -35,7 +36,12 @@ function App() {
       {/* <Menubox menuName={"아메리카노"} price={2500}/> */}
       {/* <Menubox menuName={"카페라떼"} price={2500}/> */}
       {/* <Menubox menuName={"바닐라라떼"} price={4000}/> */}
-
+      <div className='App'>
+      <MemberInfo team={"KIA 타이거즈"} memberName={"강병우"}/>
+      <MemberInfo team={"SSG 랜더스"} memberName={"김광현"}/>
+      <MemberInfo team={"두산 베어스"} memberName={"곽빈"}/>
+      <MemberInfo team={"한화 이글스"} memberName={"류현진"}/>
+    </div>
     </>
   )
 }
