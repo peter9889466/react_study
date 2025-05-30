@@ -32,8 +32,8 @@ const Notion = () => {
     const ICON_COUNT = icons.length;
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const angleStep = 40; 
-    const radius = 400; 
+    const angleStep = 40;
+    const radius = 400;
 
     const rotateLeft = () => {
         setCurrentIndex(prev => (prev - 1 + ICON_COUNT) % ICON_COUNT);
@@ -42,43 +42,47 @@ const Notion = () => {
     const rotateRight = () => {
         setCurrentIndex(prev => (prev + 1) % ICON_COUNT);
     };
-
+    
     return (
         <div>
             <h1>Notion</h1>
 
-            <button className="fixedBtn leftBtn" onClick={rotateLeft}>〈</button>
+                <button className="fixedBtn leftBtn" onClick={rotateLeft}>〈</button>
             <button className="fixedBtn rightBtn" onClick={rotateRight}>〉</button>
+            <div className="notionWrapper">
+                <div className="notionContainer">
 
-            <div className="notionContainer">
-                {icons.map((icon, i) => {
-                    const offset = (i - currentIndex + ICON_COUNT) % ICON_COUNT;
-                    const adjustedOffset = offset > ICON_COUNT / 2 ? offset - ICON_COUNT : offset;
+                    {icons.map((icon, i) => {
+                        const offset = (i - currentIndex + ICON_COUNT) % ICON_COUNT;
+                        const adjustedOffset = offset > ICON_COUNT / 2 ? offset - ICON_COUNT : offset;
 
-                    if (Math.abs(adjustedOffset) > 2) return null;
+                        if (Math.abs(adjustedOffset) > 2) return null;
 
-                    const angle = adjustedOffset * angleStep;
+                        const angle = adjustedOffset * angleStep;
 
-                    return (
-                        <a
-                            key={icon.id}
-                            href={icon.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                className="notion"
-                                src={icon.src}
-                                alt={`icon-${icon.id}`}
-                                style={{
-                                    transform: `rotateY(${angle}deg) rotateX(6deg) translateZ(${radius}px)`
-                                }}
-                            />
-                        </a>
-                    );
-                })}
+                        return (
+                            <a
+                                key={icon.id}
+                                href={icon.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img className="notion"
+                                    src={icon.src}
+                                    alt={`icon-${icon.id}`}
+                                    style={{
+                                        transform: `rotateY(${angle}deg) rotateX(6deg) translateZ(${radius}px)`
+                                    }}
+                                />
+                            </a>
+                        );
+                    })}
+                </div>
+
             </div>
+
         </div>
+
     );
 };
 

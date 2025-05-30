@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: gray;
@@ -14,24 +15,31 @@ h1 {
     text-align: center;
     font-size: 3rem;
     color: white;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
+.notionWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .notionContainer {
-    width: auto;
-    height: 100px;
+    position: relative;
+    width: 100%;
+    height: 30vh; /* 화면 높이의 80% */
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 450px;
-    transform: translate(-50%, -50%);
-    perspective: 1000px;
+    transform: translate(-50%, -50%); /* 정확히 화면 중앙 배치 */
+    perspective: 1000px;   /* 원근 효과 (입체감 핵심 요소) */
     display: flex;
     pointer-events: none;
 }
 
-/* 이미지 개별 아이콘에 pointer-events 다시 활성화 */
 .notionContainer a,
 .notionContainer img.notion {
     pointer-events: auto;
@@ -48,7 +56,7 @@ h1 {
 }
 
 .fixedBtn {
-    position: fixed;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
