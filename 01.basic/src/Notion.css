@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background-color: gray;
+    /* 어두운 색이 입체감을 더 잘 보여줌 */
     font-family: sans-serif;
     overflow-x: hidden;
 }
@@ -9,23 +10,24 @@ body {
 h1 {
     text-align: center;
     font-size: 3rem;
-    color: #333;
+    color: white;
     margin: 2rem 0;
 }
 
-/* 가운데 고정 */
+
 .notionContainer {
-    position: fixed;          /* fixed로 고정 */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;              /* 필요 시 고정폭 지정 가능 */
+    width: auto;
     height: 400px;
     perspective: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none;     /* 이미지 클릭 막는걸 방지하려면 필요에 따라 조절 */
+    pointer-events: none;
+    /* 이미지 클릭 막는걸 방지하려면 필요에 따라 조절 */
 }
 
 /* 이미지 개별 아이콘에 pointer-events 다시 활성화 */
@@ -35,11 +37,13 @@ h1 {
 }
 
 .notion {
+    border-radius: 10%;
     position: absolute;
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
     transition: transform 0.5s ease, opacity 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .fixedBtn {

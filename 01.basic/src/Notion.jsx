@@ -32,7 +32,7 @@ const Notion = () => {
     const ICON_COUNT = icons.length;
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const angleStep = 30; 
+    const angleStep = 40; 
     const radius = 400; 
 
     const rotateLeft = () => {
