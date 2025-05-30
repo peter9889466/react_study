@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: gray;
-    /* 어두운 색이 입체감을 더 잘 보여줌 */
-    font-family: sans-serif;
     overflow-x: hidden;
+    display: flex;
+    /* 수평 중앙 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
 }
 
 h1 {
@@ -16,18 +19,16 @@ h1 {
 
 
 .notionContainer {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: auto;
-    height: 400px;
-    perspective: 1000px;
-    display: flex;
+    height: 100px;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    padding-top: 450px;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    display: flex;
     pointer-events: none;
-    /* 이미지 클릭 막는걸 방지하려면 필요에 따라 조절 */
 }
 
 /* 이미지 개별 아이콘에 pointer-events 다시 활성화 */

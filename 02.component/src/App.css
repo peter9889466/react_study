@@ -12,11 +12,13 @@
     padding: 20px;
     background-color: #f2f9ff;
 }
+
 .team {
     font-size: 25px;
-    font-weight:normal;
+    font-weight: normal;
     margin: 0;
 }
+
 .memberName {
     font-size: 25px;
     font-weight: normal;
@@ -29,5 +31,38 @@
     align-items: center;
     justify-content: center;
 }
+/* likeCount2의 body */
+body {
+    display: flex;
+    /* 수평 중앙 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+}
 
-
+.likeCount2 {
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.battleNumber {
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.battleBtn{
+    display: flex;
+    gap: 10px;
+}
