@@ -15,7 +15,7 @@
     line-height: 200px;
     color: #fff;
     text-shadow: 2px 2px 4px #000;
-    animation: spin 5s infinite linear;
+    animation: spin 1s infinite linear;
     transform-style: preserve-3d;
 }
 
