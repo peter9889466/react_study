@@ -52,7 +52,7 @@ function App() {
     {/* <LikeCount/> */}
     {/* <LikeCount2/> */}
     {/* <BattleNumber/> */}
-    <DiceGame />
+    <iceGame />
     </>
   )
 }
