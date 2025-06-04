@@ -1,0 +1,34 @@
+body{
+    background-color: lightcoral;
+}
+
+.menu-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-nav>li {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-nav>li:hover {
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+}
+.menu-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
