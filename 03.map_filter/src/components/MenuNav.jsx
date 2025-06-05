@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'; // 🔸 <Link>로 경로 이동 처리
 
 export const MenuNav = ({ filter }) => {
 
@@ -10,7 +11,7 @@ export const MenuNav = ({ filter }) => {
                 {categorys.map((cate, index) => (
                     <li
                         key={index}
-                        onClick={() => filter(cate)}
+                        onMouseOver={() => filter(cate)}
                     >{cate}</li>
                 ))}
             </ul>

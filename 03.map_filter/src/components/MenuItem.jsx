@@ -4,14 +4,14 @@ import Card from 'react-bootstrap/Card'
 
 export const MenuItem = ({ menu }) => {
     return (
-        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        <div >
             <div>
-                <Card className='card' onClick={() => window.open(menu.url, '_blank')}>
+                <Card className='card' >
                     <Card.Img variant="top" src={menu.img} alt={menu.name}/>
                     <Card.Body>
                         <Card.Title>{menu.name}</Card.Title>
                         <Card.Text>{menu.price}</Card.Text>
-                        <Button variant="primary">
+                        <Button variant="primary" onClick={() => window.open(menu.url, '_blank')}>
                             주문하기
                         </Button>
                     </Card.Body>
