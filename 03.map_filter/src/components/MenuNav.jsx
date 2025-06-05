@@ -9,8 +9,8 @@ export const MenuNav = ({ filter }) => {
             <ul className='menu-nav'>
                 {categorys.map((cate, index) => (
                     <li
-                        onClick={() => filter(cate)}
                         key={index}
+                        onClick={() => filter(cate)}
                     >{cate}</li>
                 ))}
             </ul>
@@ -18,5 +18,6 @@ export const MenuNav = ({ filter }) => {
         </div>
     )
 }
+
 
 export default MenuNav

@@ -1,5 +1,5 @@
-body{
-    background-color: lightcoral;
+body {
+    padding-top: 50px;
 }
 
 .menu-board {
@@ -10,8 +10,8 @@ body{
 
 .menu-nav {
     display: flex;
-    gap: 10px;
-    padding: 0;
+    gap: 15px;
+    padding-bottom: 30px;
     list-style-type: none;
 }
 
@@ -19,16 +19,49 @@ body{
     width: 100px;
     padding: 10px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
 }
 
 .menu-nav>li:hover {
     border-radius: 10px;
     background-color: gray;
     color: white;
+    width: 200px;
+    font-size: large;
+    font-weight: bolder;
 }
-.menu-list{
-    display:flex;
+
+.menu-list {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    transition: all 0.6s ease-in-out;
+}
+
+.menu-list.fade-down {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+}
+
+.menu-list.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+.card {
+    width: 15rem;
+    transform: scale(1);
+    transition: 0.6s ease-in-out;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }

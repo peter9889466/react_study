@@ -6,12 +6,12 @@ export const MenuItem = ({ menu }) => {
     return (
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
             <div>
-                <Card style={{ width: '18rem' }}>
+                <Card className='card' onClick={() => window.open(menu.url, '_blank')}>
                     <Card.Img variant="top" src={menu.img} alt={menu.name}/>
                     <Card.Body>
                         <Card.Title>{menu.name}</Card.Title>
                         <Card.Text>{menu.price}</Card.Text>
-                        <Button variant="primary" onClick={() => window.open(menu.url, '_blank')}>
+                        <Button variant="primary">
                             주문하기
                         </Button>
                     </Card.Body>
