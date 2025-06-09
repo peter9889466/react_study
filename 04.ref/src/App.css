@@ -1,6 +1,7 @@
 body {
     text-align: center;
     align-items: center;
+    /* body에는 적용되지 않음 - 무의미 */
 }
 
 .AnimalImg {
@@ -8,15 +9,9 @@ body {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
-    align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 2s;
     transform-style: preserve-3d;
     background-color: beige;
-}
-
-
-.AnimalImg.rotate {
-    transform: rotateY(360deg);
 }
