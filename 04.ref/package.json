@@ -1,5 +1,5 @@
 {
-  "name": "03.map_filter",
+  "name": "04.ref",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,18 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.20.6",
-    "animejs": "^4.0.2",
-    "autoprefixer": "^10.4.21",
-    "bootstrap": "^5.3.6",
-    "leaflet": "^1.9.4",
-    "postcss": "^8.5.4",
     "react": "^19.1.0",
-    "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.1.0",
-    "react-leaflet": "^5.0.0",
-    "react-router-dom": "^7.6.2",
-    "tailwindcss": "^4.1.8"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
