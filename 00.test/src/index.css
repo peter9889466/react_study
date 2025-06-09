@@ -1,0 +1,40 @@
+/* ✅ Tailwind 핵심 지시문 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ 리셋 스타일 (선택 사항) */
+* {
+    @apply box-border;
+}
+
+html,
+body {
+    @apply m-0 p-0 bg-white text-black font-sans;
+}
+
+/* ✅ 사용자 지정 유틸리티 (선택 사항) */
+.btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600;
+}
+
+.input {
+    @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.card {
+    @apply bg-white shadow-md rounded-xl p-4;
+}
+
+/* ✅ Tailwind base 확장 - 예: heading 스타일 통일 */
+h1 {
+    @apply text-2xl font-bold text-center mb-4;
+}
+
+h2 {
+    @apply text-xl font-semibold mt-6 mb-2;
+}
+
+h3 {
+    @apply text-lg font-medium mt-4 mb-1;
+}
