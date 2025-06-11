@@ -1,3 +1,4 @@
+// src/components/Test.jsx
 import React from 'react'
 import Header from './Header';
 import MapSection from './MapSection';
@@ -6,10 +7,10 @@ import ChatFooter from './ChatFooter';
 
 const Test = () => {
     return (
-        <div className="min-h-screen bg-white text-black flex flex-col">
+        <div className="flex flex-col min-h-screen w-full bg-white text-black overflow-hidden">
             <Header />
             <MapSection />
-            <FilterChartSection />
+            <FilterChartSection/>
             <ChatFooter />
         </div>
     );

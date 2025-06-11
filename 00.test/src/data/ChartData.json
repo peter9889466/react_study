@@ -1,0 +1,157 @@
+{
+    "labels": [
+        "2024 04월",
+        "2024 05월",
+        "2024 06월",
+        "2024 07월",
+        "2024 08월",
+        "2024 09월",
+        "2024 10월",
+        "2024 11월",
+        "2024 12월",
+        "2025 01월"
+    ],
+    "barData": [
+        {
+            "label": "수출",
+            "data": [
+                560,
+                575,
+                565,
+                570,
+                580,
+                575,
+                560,
+                565,
+                590,
+                490
+            ],
+            "backgroundColor": "rgba(54, 162, 235, 0.6)",
+            "borderColor": "rgba(54, 162, 235, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "수입",
+            "data": [
+                550,
+                520,
+                480,
+                530,
+                520,
+                515,
+                490,
+                500,
+                540,
+                500
+            ],
+            "backgroundColor": "rgba(255, 159, 64, 0.6)",
+            "borderColor": "rgba(255, 159, 64, 1)",
+            "borderWidth": 1
+        }
+    ],
+    "lineData": [
+        {
+            "label": "전년동월대비 수출 증감률",
+            "data": [
+                12.0,
+                11.0,
+                9.0,
+                12.0,
+                10.0,
+                7.0,
+                6.0,
+                3.0,
+                8.0,
+                -7.0
+            ],
+            "fill": false,
+            "borderColor": "rgb(128, 0, 128)",
+            "borderWidth": 2,
+            "tension": 0
+        }
+    ],
+    "mixedChartData": [
+        {
+            "type": "bar",
+            "label": "수출",
+            "data": [
+                560,
+                575,
+                565,
+                570,
+                580,
+                575,
+                560,
+                565,
+                590,
+                490
+            ],
+            "backgroundColor": "rgba(54, 162, 235, 0.6)",
+            "borderColor": "rgba(54, 162, 235, 1)",
+            "borderWidth": 1,
+            "yAxisID": "y"
+        },
+        {
+            "type": "bar",
+            "label": "수입",
+            "data": [
+                550,
+                520,
+                480,
+                530,
+                520,
+                515,
+                490,
+                500,
+                540,
+                500
+            ],
+            "backgroundColor": "rgba(255, 159, 64, 0.6)",
+            "borderColor": "rgba(255, 159, 64, 1)",
+            "borderWidth": 1,
+            "yAxisID": "y"
+        },
+        {
+            "type": "line",
+            "label": "전년동월대비 수출 증감률",
+            "data": [
+                12.0,
+                11.0,
+                9.0,
+                12.0,
+                10.0,
+                7.0,
+                6.0,
+                3.0,
+                8.0,
+                -7.0
+            ],
+            "fill": false,
+            "borderColor": "rgb(128, 0, 128)",
+            "borderWidth": 2,
+            "tension": 0,
+            "yAxisID": "y1"
+        },
+        {
+            "type": "line",
+            "label": "전년동월대비 수입 증감률",
+            "data": [
+                5.0,
+                4.0,
+                1.0,
+                8.0,
+                3.0,
+                2.0,
+                1.0,
+                -1.0,
+                4.0,
+                -6.0
+            ],
+            "fill": false,
+            "borderColor": "rgb(0, 128, 128)",
+            "borderWidth": 2,
+            "tension": 0,
+            "yAxisID": "y1"
+        }
+    ]
+}

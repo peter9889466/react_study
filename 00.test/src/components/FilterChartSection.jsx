@@ -1,11 +1,15 @@
 import { useState } from "react";
 import Button from "./Button";
+import BarChart from "./BarChart";
+import LineChart from "./LineChart";
+import MixedChart from "./MixedChart"; // MixedChart 컴포넌트 임포트
+
 export default function FilterChartSection() {
-    const chartURL = "src/assets/Chart.png";
     const [item, setItem] = useState("");
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
-    const [chartType, setChartType] = useState("default"); // 'line', 'bar', 'default'
+    // 초기 차트 유형을 "default"로 설정하여 페이지 로드 시 혼합 차트가 나오도록 함
+    const [chartType, setChartType] = useState("default");
 
     // 📌 품목 변경
     const handleItemChange = (e) => setItem(e.target.value);
@@ -43,12 +47,12 @@ export default function FilterChartSection() {
         setItem("");
         setStartDate("");
         setEndDate("");
-        setChartType("default");
+        setChartType("default"); // 초기화 시 "default" (혼합 차트) 상태로 돌아오도록 설정
         console.log("입력값 초기화 완료");
     };
 
     return (
-        <section className="p-4 bg-white">
+        <section className="p-4 bg-white flex flex-col flex-grow">
             <div className="flex flex-wrap gap-4 justify-start mb-4">
                 <select className="border p-2 rounded" value={item} onChange={handleItemChange}>
                     <option value="">품목 토글</option>
@@ -79,7 +83,7 @@ export default function FilterChartSection() {
                     꺾은선그래프
                 </Button>
                 <Button
-                    onClick={() => setChartType("default")}>
+                    onClick={() => setChartType("default")}> {/* Default 버튼을 누르면 "default" (혼합 차트) 상태로 변경 */}
                     Default
                 </Button>
                 <Button
@@ -91,10 +95,19 @@ export default function FilterChartSection() {
             </div>
 
             {/* 차트 영역 */}
-            <div className="bg-white">
-                {/* 실제 차트 라이브러리 조건부 렌더링 가능 */}
-                <p className="mb-2 text-gray-500">현재 차트 유형: {chartType}</p>
-                <img src={chartURL} alt="차트" className="w-full max-w-3xl" />
+            <div className="bg-white flex flex-col flex-grow">
+                {/* 현재 차트 유형 표시 */}
+                <p className=" text-gray-500">
+                    현재 차트 유형:
+                    {chartType === 'bar' ? ' 막대그래프' :
+                        chartType === 'line' ? ' 꺾은선그래프' :
+                            ' 혼합 차트 (막대 + 꺾은선)'}
+                </p>
+                <div className="flex-grow h-full w-full">
+                    {chartType === "bar" && <BarChart />}
+                    {chartType === "line" && <LineChart />}
+                    {chartType === "default" && <MixedChart />}
+                </div>
             </div>
         </section>
     );
