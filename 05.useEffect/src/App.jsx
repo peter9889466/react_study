@@ -5,6 +5,7 @@ import './App.css'
 import Count from './components/Count'
 import Cham3 from './components/Cham3'
 import Weather from './components/Weather'
+import MovieList from './components/MovieList'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
         <>
             {/* <Count /> */}
             {/* <Cham3/> */}
-            <Weather/>
+            {/* <Weather/> */}
+            <MovieList/>
         </>
     )
 }
