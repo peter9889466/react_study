@@ -88,8 +88,7 @@ export default function FilterChartSection() {
                 </Button>
                 <Button
                     onClick={handleReset}
-                    className="bg-red-100 hover:bg-red-200 text-red-700"
-                >
+                    className="bg-red-100 hover:bg-red-200 text-red-700">
                     초기화
                 </Button>
             </div>
