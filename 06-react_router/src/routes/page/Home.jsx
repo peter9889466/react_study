@@ -8,6 +8,8 @@ const Home = () => {
             <Link to={"/About"}>About 페이지로 이동</Link>
             <br />
             <Link to={"/ProductList"}>ProductList 페이지로 이동</Link>
+            <br />
+            <Link to={"/mypage"}>MyPage로 이동</Link>
         </div>
     )
 }
