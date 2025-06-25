@@ -12,7 +12,7 @@ export default defineConfig({
   //  이를 해결하기 위해 proxy를 설정해서
   server: {
     proxy: {
-      '/api': 'http://localhost:8088'
+      '/api': 'http://3.38.251.139:8088'
     }
   }
 })
